@@ -1,0 +1,7 @@
+<%= form_with(model: @blog, local: true, url: blog_path) do |form| %>
+    <h4>
+      編集する
+    </h4>
+    TEXT<%= form.text_field :text %>
+  <%= form.submit %>
+<% end %>
